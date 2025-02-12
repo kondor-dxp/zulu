@@ -26,19 +26,19 @@ const Contact = () => {
                                     <p>info@zuluconsultingroup.com</p>
                                 </div>
                             </div>{/* End Info Item */}
-                            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=25 Vitosha blvd, fl. 2, 1000 Sofia - Bulgaria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            <iframe width="100%" height="300" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=25 Vitosha blvd, fl. 2, 1000 Sofia - Bulgaria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <form action="forms/contact.php" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay={200}>
+                        <form action="" method="post" className="php-email-form" data-aos="fade-up" data-aos-delay={200}>
                             <div className="row gy-4">
                                 <div className="col-md-6">
                                     <label htmlFor="name-field" className="pb-2">Your Name</label>
-                                    <input type="text" name="name" id="name-field" className="form-control" required />
+                                    <input type="text" name="name" id="name-field" className="form-control" autoComplete="off" required />
                                 </div>
                                 <div className="col-md-6">
                                     <label htmlFor="email-field" className="pb-2">Your Email</label>
-                                    <input type="email" className="form-control" name="email" id="email-field" required />
+                                    <input type="email" className="form-control" name="email" id="email-field" autoComplete="off" required />
                                 </div>
                                 <div className="col-md-12">
                                     <label htmlFor="subject-field" className="pb-2">Subject</label>
