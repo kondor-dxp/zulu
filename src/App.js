@@ -2,6 +2,7 @@ import './App.css';
 import Elements from './components/Elements';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Hero from './components/Hero';
 import UseScript from './components/UseScript';
 
 function App() {
@@ -9,12 +10,12 @@ function App() {
     <>
       <Header></Header>
       <main className="main">
-
+        <Hero></Hero>
       </main>
       <Footer></Footer>
       <Elements></Elements>
 
-      
+
 
       {/* Vendor JS Files */}
       <UseScript src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></UseScript>
@@ -32,5 +33,4 @@ function App() {
     </>
   );
 }
-
-export default App;
+export default App
