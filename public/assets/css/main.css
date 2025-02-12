@@ -23,8 +23,8 @@
   --default-color: #F0F2F2; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #F0F2F2; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #D9B282; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --surface-color: #F0F2F2; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #262526; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -1736,6 +1736,14 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact.section {
+  background-color: var(--surface-color);
+}
+
+.contact h3, .contact p, .contact label {
+  color: var(--contrast-color);
+}
+
 .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -1804,9 +1812,9 @@ section,
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
+  color: var(--contrast-color);
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, var(--contrast-color), transparent 80%);
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -1822,7 +1830,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
+  color: var(--default-color);
   background: var(--accent-color);
   border: 0;
   padding: 10px 30px;
