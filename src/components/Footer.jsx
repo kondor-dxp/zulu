@@ -20,13 +20,13 @@ const Footer = () => {
         <div className="container footer-top">
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" className="d-flex align-items-center">
+              <a href="#" className="d-flex align-items-center">
                 <span className="sitename">Zulu Consulting</span>
               </a>
               <div className="footer-contact pt-3">
                 <p>25 Vitosha blvd, fl. 2 </p>
                 <p>1000 Sofia - Bulgaria</p>
-                <p className="mt-3"><strong>Phone:</strong> <span>+39 348 798 8236</span></p>
+                <p className="mt-3"><strong>Phone:</strong> <span>+xx xxx xxx xxxx</span></p>
                 <p><strong>Email:</strong> <span>info@zuluconsultingroup.com</span></p>
               </div>
             </div>
