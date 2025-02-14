@@ -31,8 +31,8 @@
 :root {
   --nav-color: #F0F2F2;  /* The default color of the main navmenu links */
   --nav-hover-color: #D9B282; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-mobile-background-color: #F0F2F2; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #F0F2F2; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #F0F2F2; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #D9B282; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -40,16 +40,16 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f5f9ff;
-  --surface-color: #ffffff;
+  --background-color: #F0F2F2;
+  --surface-color: #F0F2F2;
 }
 
 .dark-background {
-  --background-color: #060606;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
+  --background-color: #262526;
+  --default-color: #F0F2F2;
+  --heading-color: #F0F2F2;
+  --surface-color: #262526;
+  --contrast-color: #F0F2F2;
 }
 
 /* Smooth scroll */
@@ -803,7 +803,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  text-align: center;
+  /* text-align: center; */
   padding-bottom: 60px;
   position: relative;
 }
@@ -862,14 +862,14 @@ section,
   position: relative;
 }
 
-.hero h1 {
+.hero h1, .skills h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 56px;
 }
 
-.hero h2 {
+.hero h2, .skills h2 {
   margin: 15px 0 0 0;
   font-size: 35px;
   font-weight: 400;
@@ -881,7 +881,7 @@ section,
   border: 3px solid;
 }
 
-.hero h1 span {
+.hero h1 span, .skills h1 span {
   font-size: 70px;
   font-weight: 800;
   color: var(--accent-color);
@@ -1035,6 +1035,14 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about p, .about p span{
+  color: var(--contrast-color);
+}
+
+.about h3 {
+  color: var(--accent-color);
+}
+
 .about .about-content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -1110,14 +1118,95 @@ section,
 
 .skills .progress-bar-wrap {
   background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+  height: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .skills .progress-bar {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   width: 1px;
-  height: 10px;
+  height: 20px;
   transition: 0.9s;
   background-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# CTA Section
+--------------------------------------------------------------*/
+.cta.section {
+  background-color: var(--accent-color);
+}
+
+.cta .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.cta .progress .skill {
+  color: var(--heading-color);
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.cta .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.cta .progress-bar-wrap {
+  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  height: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cta .progress-bar {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 1px;
+  height: 20px;
+  transition: 0.9s;
+  background-color: var(--accent-color);
+}
+
+.cta .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  /* display: inline-block; */
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid var(--default-color);
+  color: var(--default-color);
+}
+
+.cta-btn img {
+  height: 30px;
+  width: auto;
+  float: left;
+}
+
+.cta .cta-btn:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
 /*--------------------------------------------------------------
