@@ -16,7 +16,7 @@ const Contact = () => {
                                 <i className="bi bi-telephone flex-shrink-0" />
                                 <div>
                                     <h3>Call Us</h3>
-                                    <p>+39 348 798 8236</p>
+                                    <p>+xx xxx xxx xxxx</p>
                                 </div>
                             </div>{/* End Info Item */}
                             <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={400}>
@@ -52,7 +52,7 @@ const Contact = () => {
                                     <div className="loading">Loading</div>
                                     <div className="error-message" />
                                     <div className="sent-message">Your message has been sent. Thank you!</div>
-                                    <button type="submit">Send Message</button>
+                                    <button type="submit">REQUEST MORE INFO</button>
                                 </div>
                             </div>
                         </form>
