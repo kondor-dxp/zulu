@@ -1,9 +1,13 @@
 import './App.css';
+import About from './components/Abous';
 import Contact from './components/Contact';
+import CTA from './components/CTA';
 import Elements from './components/Elements';
+import Features from './components/Features';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Skills from './components/Skills';
 import UseScript from './components/UseScript';
 
 function App() {
@@ -12,12 +16,14 @@ function App() {
       <Header></Header>
       <main className="main">
         <Hero></Hero>
+        {/* <Features></Features> */}
+        <CTA></CTA>
+        <About></About>
+        <Skills></Skills>
         <Contact></Contact>
       </main>
       <Footer></Footer>
       <Elements></Elements>
-
-
 
       {/* Vendor JS Files */}
       <UseScript src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></UseScript>
