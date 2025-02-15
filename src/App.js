@@ -16,7 +16,7 @@ function App() {
       <Header></Header>
       <main className="main">
         <Hero></Hero>
-        {/* <Features></Features> */}
+        <Features></Features>
         <CTA></CTA>
         <About></About>
         <Skills></Skills>
