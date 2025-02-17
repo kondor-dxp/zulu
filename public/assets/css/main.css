@@ -871,7 +871,7 @@ section,
 
 .hero h2, .skills h2 {
   margin: 15px 0 0 0;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 56px;
 }
@@ -882,9 +882,10 @@ section,
 }
 
 .hero h1 span, .skills h1 span {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
   color: var(--accent-color);
+  line-height: 70px;
 }
 
 .hero p {
@@ -957,6 +958,15 @@ section,
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 13px;
+  }
+
+  .testimonials {
+    margin-top: -100px !important;
+  }
+
+  .stats.section {
+    margin-top: -350px !important;
+    padding-top: 400px !important;
   }
 }
 
@@ -1212,6 +1222,12 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+.stats.section {
+  background-color: var(--default-color);
+  padding-top: 300px;
+  margin-top: -250px;
+}
+
 .stats i {
   background-color: var(--accent-color);
   color: var(--contrast-color);
@@ -1228,7 +1244,6 @@ section,
 }
 
 .stats .stats-item {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   margin-top: -32px;
   padding: 40px 30px 35px 30px;
   width: 100%;
@@ -1239,9 +1254,10 @@ section,
 }
 
 .stats .stats-item span {
-  font-size: 36px;
-  display: block;
+  font-size: 70px;
+  display: inline;
   font-weight: 700;
+  color: var(--accent-color);
 }
 
 .stats .stats-item p {
@@ -1249,6 +1265,7 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
+  color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
@@ -1330,12 +1347,14 @@ section,
 # Features Section
 --------------------------------------------------------------*/
 .testimonials .service-item {
-  background-color: color-mix(in srgb, var(--default-color), transparent 10%);
+  box-shadow: #888888 2px 2px 10px;
+  background-color: #FFFFFF;
   text-align: left;
   border-radius: 15px;
   padding: 10px 20px;
   transition: border ease-in-out 0.3s;
   height: 100%;
+  margin: 10px;
 }
 
 .testimonials .service-item .icon {
