@@ -1,12 +1,12 @@
 const Features = () => {
     return(
-        <section id="testimonials" className="testimonials section">
+        <section id="services" className="testimonials section">
         {/* <img src="assets/img/testimonials-bg.jpg" className="testimonials-bg" alt="" /> */}
         <div className="container" data-aos="fade-up" data-aos-delay={100}>
           <div className="swiper init-swiper">
             <div className="swiper-wrapper">
               
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-person"></i></div>
                   <h4><a href="#" class="stretched-link">Corporate Security Consulting</a></h4>
@@ -16,7 +16,7 @@ const Features = () => {
                 </div>
               </div>{/* End Service Item */}
               
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-list-ul"></i></div>
                   <h4><a href="#" class="stretched-link">Risk and Crisis Management</a></h4>
@@ -26,7 +26,7 @@ const Features = () => {
                 </div>
               </div>{/* End Service Item */}
 
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-shield-check"></i></div>
                   <h4><a href="#" class="stretched-link">Cyber Security</a></h4>
@@ -36,7 +36,7 @@ const Features = () => {
                 </div>
               </div>{/* End Service Item */}
 
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-suitcase2"></i></div>
                   <h4><a href="#" class="stretched-link">Travel Security</a></h4>
@@ -46,7 +46,7 @@ const Features = () => {
                 </div>
               </div>{/* End Service Item */}
 
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-person-badge"></i></div>
                   <h4><a href="#" class="stretched-link">Event Security</a></h4>
@@ -56,7 +56,7 @@ const Features = () => {
                 </div>
               </div>{/* End Service Item */}
               
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-prescription2"></i></div>
                   <h4><a href="#" class="stretched-link">Medical Security</a></h4>
@@ -66,7 +66,7 @@ const Features = () => {
                 </div>
               </div>{/* End Service Item */}
 
-              <div className="swiper-slide shadow">
+              <div className="swiper-slide">
                 <div class="service-item position-relative">
                   <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
                   <h4><a href="#" class="stretched-link">Sentiment Analysis</a></h4>
