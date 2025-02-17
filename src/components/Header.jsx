@@ -26,8 +26,8 @@ const Header = () => {
               <nav id="navmenu" className="navmenu">
                 <ul>
                   <li><a href="#hero" className="active">HOME</a></li>
-                  <li><a href="#about">ABOUT US</a></li>
                   <li><a href="#services">SERVICES</a></li>
+                  <li><a href="#about">ABOUT US</a></li>
                   <li><a href="#contact">CONTACT</a></li>
                 </ul>
                 <i className="mobile-nav-toggle d-xl-none bi bi-list" />
