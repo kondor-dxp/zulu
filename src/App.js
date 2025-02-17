@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import Stats from './components/Stats';
 import UseScript from './components/UseScript';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <main className="main">
         <Hero></Hero>
         <Features></Features>
+        <Stats></Stats>
         <CTA></CTA>
         <About></About>
         <Skills></Skills>
