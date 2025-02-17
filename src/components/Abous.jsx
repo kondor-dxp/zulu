@@ -12,7 +12,7 @@ const About = () => {
                         <div className="about-content ps-0 ps-lg-3">
                             <h3>Zulu Consulting is a 25-year experience security
                             consulting firm.</h3>
-                            <p className="fst-italic">
+                            <p>
                                 Our international team consists of highly qualified
                                 consultants with military, information technology, travel
                                 security and business backgrounds.
