@@ -1045,6 +1045,15 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about.section {
+  background-image: url("/images/zuluAboutBG.jpeg");
+  background-size: cover;
+}
+
+.about.section.no-background {
+  background-image: none !important;
+}
+
 .about p, .about p span{
   color: var(--contrast-color);
 }
@@ -1224,8 +1233,8 @@ section,
 --------------------------------------------------------------*/
 .stats.section {
   background-color: var(--default-color);
-  padding-top: 300px;
-  margin-top: -250px;
+  padding-top: 350px;
+  margin-top: -300px;
 }
 
 .stats i {
@@ -1294,10 +1303,15 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services.section {
+  background-color: var(--default-color);
+}
+
 .services .service-item {
   background-color: var(--surface-color);
+  color: var(--contrast-color);
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 85%);
   padding: 80px 20px;
   transition: border ease-in-out 0.3s;
   height: 100%;
@@ -1307,7 +1321,7 @@ section,
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: var(--accent-color);
+  background: var(--default-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1317,12 +1331,13 @@ section,
 }
 
 .services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 28px;
+  color: var(--accent-color);
+  font-size: 48px;
   transition: ease-in-out 0.3s;
 }
 
 .services .service-item h3 {
+  color: var(--contrast-color);
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
@@ -1333,6 +1348,15 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+.services .section-title p span {
+  color: var(--contrast-color);
+  text-align: center;
+}
+.services .section-title p span.description-title {
+  color: var(--accent-color);
+  text-align: center;
 }
 
 .services .service-item:hover {
@@ -1401,7 +1425,7 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  margin-top: -250px;
+  margin-top: -150px;
   padding: 80px 0 0 0;
   /* position: relative; */
   background-color: transparent;
